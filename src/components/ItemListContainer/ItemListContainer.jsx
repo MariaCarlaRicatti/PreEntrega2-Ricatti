@@ -35,13 +35,12 @@ export const ItemListContainer = ({ greeting }) => {
  
       })
       .catch((error) => console.log(error));
-  }, [category]); // En el array de dependencia controlamos si se modifica el valor de la category para recargar el componente
-
+  }, [category]); 
 
   return (
     <>
       <div className="text-center fs-3 p-3 text-primary-emphasis"> {greeting} </div>
-      {/* si isLoading está en true va a mostrar Cargando productos... pero cuando se pase a false va a renderizar los productos */}
+  
       { isLoading ? <h2>Buscando productos...</h2> : <ItemList products={products} /> }
     </>
   );
