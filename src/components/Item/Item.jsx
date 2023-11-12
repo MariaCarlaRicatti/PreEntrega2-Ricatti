@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Item = ({ id, name, img, description }) => {
+export const Item = ({ id, name, img }) => {
   return (
     <div className="border m-2">
       <div className="card">
