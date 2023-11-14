@@ -19,17 +19,17 @@ export const ItemCount = ({ stock, initial = 1, onAdd }) => {
 
 
   return (
-    <div className="d-flex flex-column col-2 justify-content-center align-content-center border border-3 border-primary rounded-3 p-4">
+    <div className="d-flex flex-column col-2 justify-content-center align-content-center align-items-center border border-3 border-success rounded-3 p-4">
       <div>
-        <button className="btn btn-outline-secondary mx-3" onClick={increment}>
+        <button className="btn btn-primary mx-3" onClick={increment}>
           +
         </button>
         <strong>{count}</strong>
-        <button className="btn btn-outline-secondary mx-3" onClick={decrement}>
+        <button className="btn btn-danger mx-3" onClick={decrement}>
           -
         </button>
       </div>
-      <button className="btn btn-outline-primary mt-2" onClick={() => onAdd(count)}>Agregar al carrito</button>
+      <button className="btn btn-outline-success mt-2" onClick={() => onAdd(count)}>Agregar al carrito</button>
     </div>
   );
 };
